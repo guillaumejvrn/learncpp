@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <algorithm>
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
@@ -65,5 +66,11 @@ int main() {
     auto const itera { std::begin(mot) };
     *itera = 'p';
     std::cout << mot << " c mieux mainteant" << std::endl;
+
+    std::vector<double> constantes_mathematiques { 2.71828, 3.1415, 1.0836, 1.4142, 1.6180 };
+    std::sort(std::begin(constantes_mathematiques),std::end(constantes_mathematiques));
+    for (auto constante : constantes_mathematiques){
+        std::cout << constante << std::endl;
+    }
     return 0; //couscous
 }

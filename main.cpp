@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
@@ -23,6 +24,29 @@ int main() {
     //std::cin >> age;
     std::cout << "ton age est " << age << std::endl;
 
+    int couscous { 1 };
+    int camembert { 1 };
+    if(couscous == camembert){
+        std::cout << "c trop bon" << std::endl;
+    }
+    couscous = 1;
+    camembert = 2;
+    if(couscous == camembert){
+        std::cout << "c trop bon" << std::endl;
+    }
+    else{
+        std::cout << "c pas bon" <<std::endl;
+    }
 
+
+    std::vector<int> compter {1,2,3,4,5};
+    std::cout << "la longeur du tableau est de " << std::size(compter) << std::endl;
+    std::cout << "la derniere valeur est "  << compter.back() << std::endl;
+    std::cout << "la troiseme valeur est " << compter[2] << std::endl;
+    compter.assign(3,42);
+    int i { 0 };
+    for(i=0;i < std::size(compter);i++){
+        std::cout << compter[i] << std::endl;
+    }
     return 0;
 }

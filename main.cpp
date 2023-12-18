@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
@@ -35,7 +36,7 @@ int main() {
         std::cout << "c trop bon" << std::endl;
     }
     else{
-        std::cout << "c pas bon" <<std::endl;
+        std::cout << "c pas bon" << std::endl;
     }
 
 
@@ -48,5 +49,8 @@ int main() {
     for(i=0;i < std::size(compter);i++){
         std::cout << compter[i] << std::endl;
     }
+
+    auto iterateur { std::begin(compter) };
+    std::cout << "iterateur " << *iterateur << std::endl;
     return 0;
 }

@@ -18,5 +18,11 @@ int main() {
     somme = somme - 7;
     std::cout << "maintenant la somme est de " << somme << std::endl;
 
+    std::cout << "donne moi ton age bg " << std::endl;
+    int age { 0 };
+    //std::cin >> age;
+    std::cout << "ton age est " << age << std::endl;
+
+
     return 0;
 }

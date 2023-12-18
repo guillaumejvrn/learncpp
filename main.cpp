@@ -58,5 +58,12 @@ int main() {
 
     auto iterateur { std::begin(compter) };
     std::cout << "iterateur " << *iterateur << std::endl;
+
+    std::string mot { "llanche" };
+    std::cout << mot << std::endl;
+    std::cout << "faute d'orthographe" << std::endl;
+    auto const itera { std::begin(mot) };
+    *itera = 'p';
+    std::cout << mot << " c mieux mainteant" << std::endl;
     return 0; //couscous
 }

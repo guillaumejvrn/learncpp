@@ -45,9 +45,15 @@ int main() {
     std::cout << "la derniere valeur est "  << compter.back() << std::endl;
     std::cout << "la troiseme valeur est " << compter[2] << std::endl;
     compter.assign(3,42);
+
+    compter.clear();
+    int k { 0 };
+    for(k=0; k <10; k++){
+        compter.push_back(k+1);
+    }
     int i { 0 };
     for(i=0;i < std::size(compter);i++){
-        std::cout << compter[i] << std::endl;
+        std::cout << "nb " << compter[i] << std::endl;
     }
 
     auto iterateur { std::begin(compter) };

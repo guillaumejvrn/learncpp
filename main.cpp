@@ -58,5 +58,5 @@ int main() {
 
     auto iterateur { std::begin(compter) };
     std::cout << "iterateur " << *iterateur << std::endl;
-    return 0;
+    return 0; //couscous
 }

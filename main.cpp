@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <fstream>
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
@@ -72,5 +73,11 @@ int main() {
     for (auto constante : constantes_mathematiques){
         std::cout << constante << std::endl;
     }
+
+    std::cout << R"(aaaaa "aaaaaa"aaaaaa)" << std::endl;
+
+    std::ofstream fichier { "fichier.txt" };
+    fichier << "couscous" << 10;
+
     return 0; //couscous
 }

@@ -96,6 +96,21 @@ int main() {
 
     rectangle(2, 3, 0 ,0);
 
+    auto lambda { [](int riz)-> void{std::cout << riz;} };
+    lambda(10);
+    std::cout << std::endl;
+
+
+    struct informationspersonnelles{
+        std::string prenom;
+        std::string nom;
+        std::string sexe;
+        int age;
+    };
+    informationspersonnelles varlouis( "louis", "lerosie", "homme", 18);
+    varlouis.age = 17;
+    std::cout << "goat s'appelle " << varlouis.prenom << " " << varlouis.nom << " c'est un " << varlouis.sexe << " et il a " << varlouis.age << std::endl;
+
 
 
     return 0; //couscous

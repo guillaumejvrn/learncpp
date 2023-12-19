@@ -109,7 +109,7 @@ int main() {
     };
     informationspersonnelles varlouis( "louis", "lerosie", "homme", 18);
     varlouis.age = 17;
-    std::cout << "goat s'appelle " << varlouis.prenom << " " << varlouis.nom << " c'est un " << varlouis.sexe << " et il a " << varlouis.age << std::endl;
+    std::cout << "goat s'appelle " << varlouis.prenom << " " << varlouis.nom << " c'est un " << varlouis.sexe << " et il a " << varlouis.age << " ans" << std::endl;
 
 
 

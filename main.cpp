@@ -4,6 +4,15 @@
 #include <algorithm>
 #include <fstream>
 
+void rectangle(int longeur, int largeur, int increment ,int deuxiemeincrement) {
+    for (deuxiemeincrement = 0; deuxiemeincrement < largeur; deuxiemeincrement++) {
+        for (increment = 0; increment < longeur; increment++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+}
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
     std::cout << "ca a l'air de marcher c bg ca" << std::endl;
@@ -76,8 +85,16 @@ int main() {
 
     std::cout << R"(aaaaa "aaaaaa"aaaaaa)" << std::endl;
 
-    std::ofstream fichier { "fichier.txt" };
-    fichier << "couscous" << 10;
+    std::ofstream fichier { "fichier.txt",std::ios::app };
+    fichier << "couscous " << 10 << std::endl;
+    fichier << "ah let's go j'ai bien mange a la cantine";
+
+    std::ifstream lecture { "fichier.txt" };
+    std::string contenu {};
+    lecture >> contenu >> std::ws;
+    std::cout << contenu << std::endl;
+
+    rectangle(2, 3, 0 ,0);
 
     return 0; //couscous
 }

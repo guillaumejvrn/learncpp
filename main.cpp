@@ -3,6 +3,7 @@
 #include <string>
 #include <algorithm>
 #include <fstream>
+#include "test.h"
 
 void rectangle(int longeur, int largeur, int increment ,int deuxiemeincrement) {
     for (deuxiemeincrement = 0; deuxiemeincrement < largeur; deuxiemeincrement++) {

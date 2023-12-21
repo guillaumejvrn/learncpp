@@ -19,6 +19,7 @@ void thread(){
     std::cout << "ceci est une fonction qui est executé sur un autre thread" << std::endl;
 }
 
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
     std::cout << "ca a l'air de marcher c bg ca" << std::endl;
@@ -31,8 +32,7 @@ int main() {
     std::cout << "la variable est de " << variable << std::endl;
     int newvariable { 10 };
     std::cout << "la nouvelle variable est de " << newvariable << std::endl;
-    int somme { 0 };
-    somme = 10 + 10 + 10 + 10;
+    int somme = 10 + 10 + 10 + 10;
     std::cout << "la somme de 10 + 10 + 10 + 10 = " << somme << std::endl;
     somme = somme - 7;
     std::cout << "maintenant la somme est de " << somme << std::endl;

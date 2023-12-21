@@ -6,6 +6,14 @@
 #include "test.h"
 #include <thread>
 
+class jeu {
+public:
+    void joueur1(){
+        std::cout << "j1" << std::endl;
+    }
+    void joueur2();
+};
+
 void rectangle(int longeur, int largeur, int increment ,int deuxiemeincrement) {
     for (deuxiemeincrement = 0; deuxiemeincrement < largeur; deuxiemeincrement++) {
         for (increment = 0; increment < longeur; increment++) {
@@ -129,5 +137,8 @@ int main() {
 
     std::thread mythread(thread);
     mythread.join();
+    jeu partie;
+    partie.joueur1();
+
     return 0; //couscous
 }

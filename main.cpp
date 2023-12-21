@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <fstream>
 #include "test.h"
+#include <thread>
 
 void rectangle(int longeur, int largeur, int increment ,int deuxiemeincrement) {
     for (deuxiemeincrement = 0; deuxiemeincrement < largeur; deuxiemeincrement++) {
@@ -12,6 +13,10 @@ void rectangle(int longeur, int largeur, int increment ,int deuxiemeincrement) {
         }
         std::cout << std::endl;
     }
+}
+
+void thread(){
+    std::cout << "ceci est une fonction qui est executé sur un autre thread" << std::endl;
 }
 
 int main() {
@@ -121,5 +126,8 @@ int main() {
     std::cout << "la valeur a l'adresse memoire " << pointeur << " est " << valeurpointeur << std::endl;
     *pointeur = 2;
     std::cout << "la variable loris a changé et maintenant a " << loris << std::endl;
+
+    std::thread mythread(thread);
+    mythread.join();
     return 0; //couscous
 }

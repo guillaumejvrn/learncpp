@@ -114,5 +114,12 @@ int main() {
 
     cookie();
 
+    int loris { 10 }; //variable
+    int* pointeur = &loris; //creation du pointeur
+    std::cout << "la valeur du pointeur est de " << pointeur << std::endl;
+    int valeurpointeur = *pointeur;
+    std::cout << "la valeur a l'adresse memoire " << pointeur << " est " << valeurpointeur << std::endl;
+    *pointeur = 2;
+    std::cout << "la variable loris a changé et maintenant a " << loris << std::endl;
     return 0; //couscous
 }

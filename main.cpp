@@ -139,6 +139,6 @@ int main() {
     mythread.join();
     jeu partie;
     partie.joueur1();
-
+    cookie();
     return 0; //couscous
 }
